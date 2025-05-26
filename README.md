@@ -19,5 +19,13 @@ Common Services running:
           --23/tcp (Telnet): Remote access (unencrypted, high risk: avoid using).
           --25/tcp (SMTP): Simple Mail Transfer Protocol; email sending (risk: spam or phishing if misconfigured).
           --53/tcp-udp (DNS): Domain Name System; name resolution (risk: DNS spoofing).
-          --80/tcp (HTTP): Web traffic (risk: web vulnerabilities like XSS, SQL injection).
+          potential security risks from open ports--80/tcp (HTTP): Web traffic (risk: web vulnerabilities like XSS, SQL injection).
           --443/tcp (HTTPS): Secure web traffic (risk: SSL/TLS misconfigurations).
+          
+This are the ports that i have got from scanning my local ip
+And I have also mentioned  potential security risks for this open ports:
+
+          --135 (msrpc): Used for Microsoft RPC, enabling inter-process communication in Windows; often targeted by malware.
+          --139 (netbios-ssn): NetBIOS over TCP for legacy Windows file/printer sharing; vulnerable to enumeration and SMB exploits.
+          --443 (https): Secure HTTP for web traffic; risks include SSL/TLS vulnerabilities if not properly configured.
+          --445 (microsoft-ds): SMB for modern Windows file sharing; a frequent target for ransomware (e.g., EternalBlue).
